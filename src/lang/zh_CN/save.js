@@ -1,0 +1,27 @@
+const zh_save = {
+    economize_title: '节省',
+    economize_desc: '存入并允许协议借出您的资产以获得收益和其他奖励。',
+    economize_save: '存款',
+    economize_save_total: '存款总额',
+    economize_lend_total: '借款总额',
+    collateral: '用做抵押',
+    collateral_error: '借出中的资产无法取消质押，请偿还后再试',
+    economize_lend: '借款',
+    economize_withdraw: '提现',
+    economize_repay: '偿还',
+    economize_supplied: '已存',
+    economize_borrowed: '已借',
+    economize_table_asset: '资产',
+    economize_table_total_save: '存款规模',
+    economize_table_total_lend: '借款规模',
+    economize_table_save_APY: '存款 APY',
+    economize_table_lend_APY: '借款 APY',
+    economize_table_rewards: '收益',
+    repaid: '应还总额',
+    interest: '利息',
+    lend_limit: '借款占比',
+    safe_max: '安全最大',
+    use_lend_limit: '限额已使用',
+}
+
+export default zh_save

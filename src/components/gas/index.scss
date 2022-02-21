@@ -1,0 +1,71 @@
+// @import '../../var.scss';
+
+.gas-slider {
+    // width: 274px;
+    padding: 12px;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(0, 34, 55, 0.1);
+
+    &-item {
+        // width: 72px;
+        height: 60px;
+        font-size: 18px;
+        padding: 8px;
+        color: var(--text-color);
+        font-weight: bold;
+        border-radius: 8px;
+        transition: 400ms;
+        box-sizing: border-box;
+
+        .gas {
+            font-size: 12px;
+            color: var(--sub-text-color);
+        }
+
+        &:nth-of-type(2) {
+            margin: 0 8px;
+        }
+    }
+
+    .act {
+
+        border: 1px solid var(--semi-color-primary-light-default);
+        color: var(--act-text-color);
+    }
+
+    .input-box {
+        height: 48px;
+        box-sizing: border-box;
+        border-radius: 8px;
+        position: relative;
+
+        .input {
+
+            height: 48px;
+            width: 90px;
+
+            .semi-input-wrapper {
+                border: none !important;
+                background: none !important;
+            }
+        }
+
+    }
+
+    input {
+        font-weight: bold;
+        font-size: 18px !important;
+        color: var(--text-color) !important;
+        text-align: center !important;
+    }
+
+    .dig {
+        position: absolute;
+        font-weight: bold;
+        font-size: 18px !important;
+        color: var(--text-color) !important;
+        right: 20px;
+        bottom: 50%;
+        transform: translate(0, 50%);
+    }
+}

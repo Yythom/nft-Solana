@@ -1,0 +1,11 @@
+/**
+ * 定义常量或枚举等
+ */
+const MAX_NUMBER = '115792089237316195423570985008687907853269984665640564039457584007913129639935'
+const trxPrice = '110187326632476850'
+const assetPrice = '1000000000000000000'
+export {
+    MAX_NUMBER,
+    trxPrice,
+    assetPrice,
+}

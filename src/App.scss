@@ -1,0 +1,257 @@
+@import '../theme/scss/index.scss';
+
+@font-face {
+  font-family: "solana";
+  /* Project id 2286649 */
+  src: url("./font/PlusJakartaDisplay-Regular.woff2") format("woff2"),
+}
+
+@font-face {
+  font-family: "solana-medium";
+  /* Project id 2286649 */
+  src: url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/src/plus-jakarta-display/PlusJakartaDisplay-Medium.woff2") format("woff2"),
+}
+
+@font-face {
+  font-family: "solana-bold";
+  /* Project id 2286649 */
+  src: url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/src/plus-jakarta-display/PlusJakartaDisplay-Bold.woff2") format("woff2"),
+}
+
+* {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+  }
+  font-family: solana !important;
+}
+
+.semi-layout-content {
+  // padding-top: 112px !important;
+}
+
+.App {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  header {
+    display: none;
+    height: 112px;
+
+    .head-item {
+      margin-left: 10px;
+    }
+  }
+
+  .wrap {
+    height: 100%;
+
+    .right {
+      width: calc(100vw - 241px);
+      height: 100%;
+    }
+
+    .left {
+      height: 100%;
+      width: 240px;
+      border-right: 1px solid #ccc;
+
+    }
+
+  }
+
+  .content-head {
+    height: 100px;
+    margin-bottom: 20px;
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .desc {
+      font-size: 16px;
+      margin-top: 14px;
+      color: var(--text-color);
+    }
+  }
+
+  .shadow {
+    box-shadow: 0px 0px 15px 0px rgba(9, 44, 76, 0.1);
+  }
+
+}
+
+.semi-avatar-grey {
+  background: none;
+}
+
+.lang {
+  .semi-select {
+    background-color: var(--semi-color-fill-1);
+  }
+}
+
+.trade-from {
+  // width: 475px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  // padding: 20px;
+  margin: 0 auto;
+  box-shadow: 2px 8px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+.coin {
+  // margin-top: 25px;
+  // padding-bottom: 12px;
+
+  input {
+    text-align: right;
+    font-size: 30px;
+    padding: 0;
+    // color: #f1356e;
+    font-weight: bold;
+  }
+
+  .s-coin {
+    border-radius: 8px;
+    height: 55px;
+
+    img {
+      width: 36px;
+      height: 36px;
+      margin-right: 14px;
+      border-radius: 50%;
+      background-color: #ccc;
+    }
+  }
+
+}
+
+
+.coin-dig {
+  position: absolute;
+  right: 20px;
+  font-size: 18px;
+  bottom: 20px;
+}
+
+.coin-search {
+  img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 16px;
+    background-color: #ccc;
+  }
+
+  &-item {
+    height: 50px;
+    width: 100%;
+    // background-color: #fff;
+    justify-content: flex-start;
+
+    button {
+      background-color: #fff;
+      width: 100%;
+    }
+  }
+}
+
+.card {
+  border: 1px solid var(--semi-color-primary-light-default);
+  padding: 17px;
+  // padding-top: 0;
+  border-radius: 20px;
+  box-sizing: border-box;
+  position: relative;
+
+  .item {
+    font-size: 14px;
+    margin-bottom: 13px;
+    color: var(--text-color);
+
+    * {
+      color: #ccc;
+    }
+  }
+}
+
+body[theme-mode="dark"] {
+  .card {
+    border: none;
+    background: #21252E;
+  }
+
+  thead {
+    .semi-table-row-head {
+      // border-radius: 20px;
+      height: 60px;
+      background: rgba(0, 0, 0, 0.5) !important;
+
+      &:nth-last-of-type(1) {
+        border-radius: 0 10px 10px 0;
+
+      }
+
+      &:nth-of-type(1) {
+        border-radius: 10px 0 0 10px;
+      }
+    }
+  }
+
+  .link {
+    cursor: pointer;
+
+    &:hover {
+      transition: 300ms;
+      color: rgb(108, 106, 250);
+    }
+  }
+
+  .max {
+    width: 64px;
+    height: 44px;
+    background: rgba(247, 86, 255, 0.2) !important;
+    border-radius: 8px;
+    font-size: 14px;
+
+    &:hover {
+      background: rgba(247, 86, 255, 0.2) !important;
+    }
+  }
+
+  .semi-table-tbody {
+    .semi-table-row-cell {
+      // border-radius: 20px;
+      padding: 0;
+      padding-top: 10px;
+
+      &:nth-last-of-type(1) {
+        >div {
+          border-radius: 0 10px 10px 0;
+        }
+      }
+
+      &:nth-of-type(1) {
+
+        >div {
+          border-radius: 10px 0 0 10px;
+        }
+      }
+
+      >div {
+        background: rgba(0, 0, 0, 0.3);
+        padding: 16px 16px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+      }
+    }
+
+    .semi-table-row {}
+  }
+}
