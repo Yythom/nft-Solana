@@ -50,7 +50,7 @@ const ConnectWallets = memo(({
         }
     }
     return <div>
-        {network && <Button style={{ fontSize: '13px', marginLeft: '20px' }}
+        {network && <Button style={{ fontSize: '13px', marginLeft: '20px', background: '#fff', color: '#333' }}
             onClick={loginWallet}
         >
             {connect ? `${getSubStr(address)}` : `Connect ${NETWORK[network]?.wallet_name}`}

@@ -21,7 +21,7 @@ const initialState = {
     slider: 1,
     gas: '',
     balance: 0,
-    mode: 'dark'
+    mode: 'light',
 }
 /**
  * reducers

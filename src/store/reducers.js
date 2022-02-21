@@ -1,6 +1,7 @@
 import { combineReducers } from '@reduxjs/toolkit'
 // import cart from './cart';
 import demo from './demo'
+import searchSlice from './searchSlice'
 import user from './userinfo'
 
 
@@ -10,6 +11,7 @@ import user from './userinfo'
 const reducers = {
     demo: demo,
     user,
+    searchSlice: searchSlice
 }
 
 const reducer = combineReducers(reducers)

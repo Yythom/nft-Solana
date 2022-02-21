@@ -50,14 +50,20 @@ html {
         border-radius: 10px;
 
         &:hover {
-            background: var(--bd-color) !important;
+            // background: var(--bd-color) !important;
         }
     }
 }
-
+.semi-button:hover{
+    background:rgb(224, 224, 224) !important;
+}
 .semi-button-primary {
     color: #fff;
     background: var(--bd-color);
+    background:rgb(19, 90, 255);
+    &:hover{
+        background:#eee;
+    }
 }
 
 .semi-page-item:hover {
@@ -65,24 +71,42 @@ html {
 }
 
 .semi-button-light {
-    // background: var(--bd-color);
+    background: #eee;
 
     .semi-typography {
         color: #fff;
     }
 }
-
+.semi-tagInput,.semi-select{
+   
+    background: none;
+    border: 1px #ccc solid;
+    padding: 4px 2px;
+    border-radius: 14px;
+    &:hover{
+        background: none;
+    }
+}
+.semi-select-option-focused{
+    background: #eee;
+}
+.semi-select-option{
+    &:hover{
+        background: #eee;
+    }
+}
 .semi-input-wrapper {
     color: var(--semi-color-text-0);
     background: none;
     // background-color: var(--semi-color-fill-0);
     border: none;
-    background-color: #000;
+    // background-color: #000;
+    background-color: none;
     // border: 1px solid var(--semi-color-primary-light-default);
 
     &:hover {
-        background-color: #000;
-        // background: none;
+        // background-color: #eee;
+        background: none;
     }
 
     input::placeholder {
@@ -90,9 +114,9 @@ html {
     }
 }
 
-.semi-button-content {
-    color: #fff !important;
-}
+// .semi-button-content {
+//     color: #fff !important;
+// }
 
 .semi-spin-wrapper {
     color: #6c6afa;
