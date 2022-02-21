@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { IconSearch } from "@douyinfe/semi-icons";
 import { Button, Input, Modal, Select, TagInput } from "@douyinfe/semi-ui";
 import { memo, useMemo, useState } from "react";
@@ -8,8 +9,7 @@ import ConnectWallets from "./connec_wallets/connec_wallets";
 import ImagesComponent from "./img_show/img_show";
 import './index.scss'
 import MyWallets from "./my_wallets/my_wallets";
-import YouReceive from "./you-receive/my_wallets";
-import ReceiveCard from "./you-receive/receive_card/receive_card";
+import ReceiveCard from "./receive_card/receive_card";
 const DemoComponent = memo(() => {
     const {
         fromCoin,

@@ -1,8 +1,8 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState } from "react";
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
 import { actions } from "../store/searchSlice";
 import logger from "../utils/logger";
-import { getStorageSync, setStorageSync } from "../utils/uitls";
 
 function useSearch() {
     const searchSlice = useSelector((v: any) => v.searchSlice, shallowEqual);
@@ -12,7 +12,6 @@ function useSearch() {
         const c = JSON.parse(JSON.stringify(searchSlice?.search || {}));
         c[key] = v;
         dispatch(actions.setseatch(c));
-        setStorageSync('filter_search', c);
         logger('filter', c)
     }
 

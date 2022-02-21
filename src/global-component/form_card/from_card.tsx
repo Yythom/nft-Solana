@@ -17,25 +17,12 @@ interface FromCardProps {
     exchangeInfo: any,
     balance?: number,
 }
-interface Coin {
-    coin: {
-        address: string,
-        chainId?: number,
-        decimals?: number,
-        logoURI?: string,
-        name?: string,
-        symbol?: string,
-    },
-    num: string
-}
 
 declare global {
     interface Window {
         base58: any;
     }
 }
-
-
 
 const FromCard = memo(({ onClick, exchangeInfo, balance }: FromCardProps) => {
     const [ratio, setratio] = useState(false);

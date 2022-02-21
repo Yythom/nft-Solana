@@ -1,9 +1,7 @@
 import { Button, SideSheet } from "@douyinfe/semi-ui";
 import { memo, useState } from "react";
-import SelectTag from "../../../../../global-component/selectTag/select_tag";
-import useSearch from "../../../../../hooks/useSearch";
-
-
+import SelectTag from "../../../../global-component/selectTag/select_tag";
+import useSearch from "../../../../hooks/useSearch";
 
 const NftList = memo(() => {
     const { search, setSearch } = useSearch();

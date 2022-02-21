@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { IconSearch } from "@douyinfe/semi-icons";
 import { Button, Modal } from "@douyinfe/semi-ui";
 import { Input } from "@douyinfe/semi-ui/lib/es/input";
