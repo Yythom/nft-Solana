@@ -90,7 +90,7 @@ const App = () => {
                 padding: '12px 12px 12px 12px',
                 height: 'calc(100vh - 70px)',
                 boxSizing: 'border-box',
-                overflow: 'hidden',
+                overflow: 'scroll',
               }}
             >
               <Route path='/' exact component={ProEmpty} />

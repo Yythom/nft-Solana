@@ -4,6 +4,7 @@ import { memo, useMemo, useState } from "react";
 import FromCard from "../../../global-component/form_card/from_card";
 import PopContent from "../../../global-component/pop_content";
 import useSelectCoin from "../../../hooks/useSelectCoin";
+import ImagesComponent from "./img_show/img_show";
 import './index.scss'
 import MyWallets from "./my_wallets/my_wallets";
 import YouReceive from "./you-receive/my_wallets";
@@ -39,6 +40,9 @@ const DemoComponent = memo(() => {
             console.log(coin, 'rec');
 
         }} />
+        <div style={{ width: '200px' }}>
+            <ImagesComponent imgList={Array.from(Array(4))} />
+        </div>
     </div>
 });
 
