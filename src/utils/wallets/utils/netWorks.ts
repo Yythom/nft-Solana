@@ -4,14 +4,15 @@ import { getStorageSync } from "../../uitls";
 import wallets from "../phantom";
 import { connectMetaMask } from "./connect";
 import { disconnectToWallet } from "./linkto";
-
 declare global {
     interface Window {
         ethereum: any;
     }
 }
+
 const NETWORK: any = {
-    "Ethereum": {
+
+    Ethereum: {
         icon: 'https://storage.googleapis.com/zapper-fi-assets/tokens/ethereum/0x0000000000000000000000000000000000000000.png',
         wattle: async () => {
             if (!window?.ethereum._state.isUnlocked) {
@@ -21,7 +22,9 @@ const NETWORK: any = {
                 })
                 // return window?.ethereum._state.isUnlocked
             }
-            return await connectMetaMask()
+            const addr = await connectMetaMask()
+            return addr
+
         },
         wallet_name: 'MetaMask',
         showConnect: () => {
@@ -33,7 +36,7 @@ const NETWORK: any = {
         },
         value: 2
     },
-    "Solana": {
+    Solana: {
         icon: 'https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/So11111111111111111111111111111111111111112/logo.png',
         wattle: async () => {
             const wallet = wallets.Phantom.getAdapter();
@@ -52,4 +55,4 @@ const NETWORK: any = {
 
 }
 
-export default NETWORK
+export default NETWORK;

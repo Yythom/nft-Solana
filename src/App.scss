@@ -18,11 +18,20 @@
   src: url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/src/plus-jakarta-display/PlusJakartaDisplay-Bold.woff2") format("woff2"),
 }
 
+.hover {
+  &:hover {
+    background: #eee;
+  }
+}
+
 * {
   scrollbar-width: none;
+
   &::-webkit-scrollbar {
-    display: none; /* Chrome Safari */
+    display: none;
+    /* Chrome Safari */
   }
+
   font-family: solana !important;
 }
 

@@ -4,6 +4,7 @@ import { memo, useMemo, useState } from "react";
 import FromCard from "../../../global-component/form_card/from_card";
 import PopContent from "../../../global-component/pop_content";
 import useSelectCoin from "../../../hooks/useSelectCoin";
+import ConnectWallets from "./connec_wallets/connec_wallets";
 import ImagesComponent from "./img_show/img_show";
 import './index.scss'
 import MyWallets from "./my_wallets/my_wallets";
@@ -35,6 +36,7 @@ const DemoComponent = memo(() => {
 
         <PopContent text='923882098' content='12313123' />
 
+        <ConnectWallets />
 
         <ReceiveCard onClick={(coin: any) => {
             console.log(coin, 'rec');
