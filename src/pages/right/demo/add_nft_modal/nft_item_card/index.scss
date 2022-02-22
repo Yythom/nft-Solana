@@ -8,17 +8,6 @@
          position: relative;
          transition: 300ms;
 
-         .selected_icon {
-             position: absolute;
-             right: 16px;
-             top: 16px;
-             // width: 20px;
-             // height: 20px;
-             overflow: hidden;
-             border-radius: 50%;
-             background-color: #3772ff;
-             padding: 8px;
-         }
 
          .info {
              box-sizing: border-box;
@@ -35,4 +24,16 @@
      .selected {
          box-shadow: 0px 0px 0px 3px #3772ff, 0px 2px 10px rgba(17, 20, 45, .12) !important;
      }
+ }
+
+ .selected_icon {
+     position: absolute;
+     right: 16px;
+     top: 16px;
+     width: 24px;
+     height: 24px;
+     overflow: hidden;
+     border-radius: 50%;
+     background-color: #3772ff;
+     padding: 8px;
  }

@@ -10187,7 +10187,7 @@
   "resolved" "https://registry.npmjs.org/min-indent/-/min-indent-1.0.1.tgz"
   "version" "1.0.1"
 
-"mini-create-react-context@^0.4.0":
+"mini-create-react-context@^0.4.0", "mini-create-react-context@^0.4.1":
   "integrity" "sha512-YWCYEmd5CQeHGSAKrYvXgmzzkrvssZcuuQDDeqkT+PziKGMgE+0MCCtcKbROzocGBG1meBLl2FotlRwf4gAzbQ=="
   "resolved" "https://registry.npmjs.org/mini-create-react-context/-/mini-create-react-context-0.4.1.tgz"
   "version" "0.4.1"
@@ -12065,7 +12065,7 @@
     "kleur" "^3.0.3"
     "sisteransi" "^1.0.5"
 
-"prop-types@^15.0.0", "prop-types@^15.5.0", "prop-types@^15.5.7", "prop-types@^15.6.0", "prop-types@^15.6.2", "prop-types@^15.7.2", "prop-types@15.7.2", "prop-types@15.x":
+"prop-types@^15.0.0", "prop-types@^15.5.0", "prop-types@^15.5.7", "prop-types@^15.6.0", "prop-types@^15.6.2", "prop-types@^15.7.2", "prop-types@>=15", "prop-types@15.7.2", "prop-types@15.x":
   "integrity" "sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ=="
   "resolved" "https://registry.npmjs.org/prop-types/-/prop-types-15.7.2.tgz"
   "version" "15.7.2"
@@ -12354,6 +12354,11 @@
   "resolved" "https://registry.npmjs.org/react-error-overlay/-/react-error-overlay-6.0.9.tgz"
   "version" "6.0.9"
 
+"react-freeze@^1.0.0":
+  "integrity" "sha512-yQaiOqDmoKqks56LN9MTgY06O0qQHgV4FUrikH357DydArSZHQhl0BJFqGKIZoTqi8JizF9Dxhuk1FIZD6qCaw=="
+  "resolved" "https://registry.npmjs.org/react-freeze/-/react-freeze-1.0.0.tgz"
+  "version" "1.0.0"
+
 "react-intl-universal@^2.4.8":
   "integrity" "sha512-My1pu7GX8soUZ5DJDF3EkRcoPlTBrlxneNdAd1c6IFIZNsUsVdooDRaLZn2SQ5IoH0Y84DXtflVE0flAm9oLSQ=="
   "resolved" "https://registry.npmjs.org/react-intl-universal/-/react-intl-universal-2.4.8.tgz"
@@ -12414,7 +12419,15 @@
     "prop-types" "15.x"
     "react-draggable" "^4.0.3"
 
-"react-router-dom@^5.3.0":
+"react-router-cache-route@^1.12.5":
+  "integrity" "sha512-0aVRIxAF14e+0e3JkWeCVvypXrCrtgLEjYCoNWHeq8A7I5nSfVK/YuRTWRw5E3NQKwz6YGwEdHa9g83118rzow=="
+  "resolved" "https://registry.npmjs.org/react-router-cache-route/-/react-router-cache-route-1.12.5.tgz"
+  "version" "1.12.5"
+  dependencies:
+    "mini-create-react-context" "^0.4.1"
+    "react-freeze" "^1.0.0"
+
+"react-router-dom@^5.3.0", "react-router-dom@>=4":
   "integrity" "sha512-ObVBLjUZsphUUMVycibxgMdh5jJ1e3o+KpAZBVeHcNQZ4W+uUGGWsokurzlF4YOldQYRQL4y6yFRWM4m3svmuQ=="
   "resolved" "https://registry.npmjs.org/react-router-dom/-/react-router-dom-5.3.0.tgz"
   "version" "5.3.0"

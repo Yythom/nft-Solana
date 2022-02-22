@@ -1,1 +1,48 @@
-.asset {}
+.asset {
+    padding: 0 80px;
+    box-sizing: border-box;
+
+
+
+    .img {
+        width: 34vw;
+        height: 34vw;
+        border-radius: 30px;
+        overflow: hidden;
+
+        img {
+            width: inherit;
+            height: inherit;
+        }
+    }
+
+    .info {
+        width: calc(100% - 37vw);
+        padding: 0 3vw;
+
+        strong {
+            font-size: 32px;
+        }
+    }
+
+    .asset-traits {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .item {
+            font-size: 12px;
+            border-radius: 12px;
+            width: 48%;
+            padding: 12px;
+            box-sizing: border-box;
+            background: #f4f5f6;
+            margin-bottom: 12px;
+
+            .bold {
+                font-size: 14px;
+            }
+        }
+    }
+}

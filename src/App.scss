@@ -41,6 +41,14 @@
   // padding-top: 112px !important;
 }
 
+.semi-card {
+  border-radius: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 .App {
   height: 100%;
   width: 100%;
@@ -264,5 +272,22 @@ body[theme-mode="dark"] {
     }
 
     .semi-table-row {}
+  }
+}
+
+
+.btn {
+  background-color: #3772ff;
+  padding: 16px 24px;
+  font-size: 16px;
+  color: #fcfcfd;
+  font-weight: bold;
+  border-radius: 90px;
+  text-align: center;
+  cursor: pointer;
+  transition: 400ms;
+
+  &:hover {
+    background: #044eff;
   }
 }

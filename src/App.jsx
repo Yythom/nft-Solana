@@ -19,6 +19,7 @@ import DemoComponent from "./pages/right/demo/demo";
 import Listings from "./pages/right/list/Listings";
 import ConnectWallets from "./utils/wallets/isConnect";
 import Asset from "./pages/right/asset/asset";
+import CacheRoute from "react-router-cache-route";
 
 const { Header, Sider, Content } = Layout;
 const App = () => {
@@ -108,7 +109,10 @@ const App = () => {
               }}
             >
               <Route path='/' exact component={ProEmpty} />
-              <Route path='/demo' exact component={DemoComponent} />
+              <CacheRoute exact path="/demo">
+                <DemoComponent />
+              </CacheRoute>
+              {/* <Route path='/demo' exact component={DemoComponent} /> */}
               <Route path='/list' exact component={Listings} />
               <Route path='/asset' exact component={Asset} />
 

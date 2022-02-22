@@ -6,8 +6,10 @@ import { NFT_list } from "./mock";
 import useSlice from "../../../../../hooks/useStore";
 import { actions } from "../../../../../store/ntf_data_slice";
 import { IconChevronRight } from "@douyinfe/semi-icons";
+import { useHistory } from "react-router-dom";
 const NtfItemListCard = memo(() => {
     const { slice, dispatch } = useSlice('ntfDataSlice');
+    const history = useHistory()
     return <div>
         <div className="ntf_item_wrap flex">
             {
@@ -27,10 +29,22 @@ const NtfItemListCard = memo(() => {
                         <img src={e.bg} alt="" />
                         <div className="info fd">
                             <strong className="fb" style={{ cursor: 'pointer' }}
-                                onClick={() => {
-                                    // https://api.genie.xyz/data/0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb/1414
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    const UNLISTEN = history.listen(route => {
+                                        console.log(route);
+                                        if (route.pathname === "/asset") {
+                                            document.getElementById('root')!.style.position = 'sticky'
+                                            document.getElementById('root')!.style.zIndex = '99999'
+                                        } else {
+                                            UNLISTEN()
+                                            document.getElementById('root')!.style.position = ''
+                                            document.getElementById('root')!.style.zIndex = ''
+                                        }
+                                    })
 
-                                    window.open(window.location.origin + `/asset?addr=0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb&code=1414`);
+                                    history.push(`/asset?addr=0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb&code=1414`);
+
                                 }}
                             >{e.text} <IconChevronRight /></strong>
                             <div>{e.price}</div>
