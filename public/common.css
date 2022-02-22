@@ -69,11 +69,11 @@ body[theme-mode="dark"] .semi-portal * {
 
 
 body .semi-navigation-item-selected {
-    color: #fff;
+    /* color: #fff; */
 }
 
 body .semi-navigation-item:hover {
-    color: #fff !important;
+    /* color: #fff !important; */
 }
 
 ul,

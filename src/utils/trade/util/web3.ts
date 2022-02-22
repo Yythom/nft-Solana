@@ -5,7 +5,7 @@ import {
   Account, AccountInfo, Commitment, Connection, PublicKey, SystemProgram, Transaction,
   TransactionInstruction, TransactionSignature
 } from '@solana/web3.js';
-import { showNotic } from '../../Toast';
+import { showNotic } from '../../js_utils/Toast';
 
 import {
   ASSOCIATED_TOKEN_PROGRAM_ID, RENT_PROGRAM_ID, SYSTEM_PROGRAM_ID, TOKEN_PROGRAM_ID

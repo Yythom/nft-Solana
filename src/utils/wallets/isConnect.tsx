@@ -1,9 +1,9 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { Button, Radio } from "@douyinfe/semi-ui";
 import { memo, useEffect, useState } from "react";
-import { getSubStr } from "../format";
-import { clearKeyTime, startInterval } from "../interval";
-import logger from "../logger";
+import { getSubStr } from "../js_utils/format";
+import { clearKeyTime, startInterval } from "../js_utils/interval";
+import logger from "../js_utils/logger";
 import NETWORK from "./utils/netWorks";
 
 
@@ -50,12 +50,12 @@ const ConnectWallets = memo(({
         }
     }
     return <div>
-        {network && <Button style={{ fontSize: '13px', marginLeft: '20px', background: '#fff', color: '#333' }}
+        {network && <div style={{ fontSize: '13px', marginLeft: '20px', color: '#333', fontWeight: 'bold' }}
             onClick={loginWallet}
         >
             {connect ? `${getSubStr(address)}` : `Connect ${NETWORK[network]?.wallet_name}`}
             <Radio style={{ marginLeft: '10px' }} checked={connect} />
-        </Button>}
+        </div>}
     </div>
 })
 

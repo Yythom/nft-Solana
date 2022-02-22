@@ -9,19 +9,19 @@ import ConnectWallets from "./connec_wallets/connec_wallets";
 import ImagesComponent from "./img_show/img_show";
 import './index.scss'
 import MyWallets from "./my_wallets/my_wallets";
-import ReceiveCard from "./receive_card/receive_card";
+import AddNtfModal from "./add_nft_modal/modal";
 const DemoComponent = memo(() => {
-    const {
-        fromCoin,
-        toCoin,
-        isNotBalance,
-        balance,
-        setFromCoinHandle,
-        setToCoinHandle,
-    } = useSelectCoin(false);
+    // const {
+    //     fromCoin,
+    //     toCoin,
+    //     isNotBalance,
+    //     balance,
+    //     setFromCoinHandle,
+    //     setToCoinHandle,
+    // } = useSelectCoin(false);
 
     return <div>
-        <FromCard
+        {/* <FromCard
             exchangeInfo={{
                 sale_coin: fromCoin,
                 buy_coin: toCoin
@@ -31,14 +31,14 @@ const DemoComponent = memo(() => {
                 // console.log(coin, 'coin');
                 setFromCoinHandle('', coin);
             }}
-        />
+        /> */}
         <MyWallets />
 
         <PopContent text='923882098' content='12313123' />
 
         <ConnectWallets />
 
-        <ReceiveCard onClick={(coin: any) => {
+        <AddNtfModal onClick={(coin: any) => {
             console.log(coin, 'rec');
 
         }} />

@@ -3,6 +3,29 @@
 .menu {
     box-sizing: border-box;
     height: 100%;
+    padding: 0;
+
+    .semi-navigation-item-text {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    .semi-navigation-list-wrapper {
+        height: 100%;
+
+        .semi-navigation-list {
+            height: inherit;
+
+            .semi-navigation-item {
+                height: inherit;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 30px !important;
+            }
+        }
+    }
 
     .menu-icon {
         width: 22px;
@@ -34,7 +57,6 @@
     }
 
     .user {
-        margin-top: 40px;
         width: 100%;
         // background-color: #ccc;
         border-radius: 20px;

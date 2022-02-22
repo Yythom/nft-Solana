@@ -2,8 +2,8 @@
 /* eslint-disable no-use-before-define */
 /* eslint-disable no-unused-vars */
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
-import { hideLoading, showLoading, showToast } from '../utils/Toast';
-import { getStorageSync, setStorageSync } from '../utils/uitls';
+import { hideLoading, showLoading, showToast } from '../utils/js_utils/Toast';
+import { getStorageSync, setStorageSync } from '../utils/js_utils/uitls';
 import { PublicKey } from '@solana/web3.js'
 
 import np from 'number-precision'

@@ -9,12 +9,12 @@ import { Avatar, Button, Empty, Modal, Popover, } from "@douyinfe/semi-ui";
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
 import { actions } from "../../store/userinfo";
 import Intl from 'react-intl-universal'
-import { hideLoading, showLoading, showNotic } from "../../utils/Toast";
-import { stopInterval } from "../../utils/interval";
+import { hideLoading, showLoading, showNotic } from "../../utils/js_utils/Toast";
+import { stopInterval } from "../../utils/js_utils/interval";
 import Text from "@douyinfe/semi-ui/lib/es/typography/text";
 import './index.scss'
 import footArray, { footIcon } from "./footArray";
-import { getStorageSync } from "../../utils/uitls";
+import { getStorageSync } from "../../utils/js_utils/uitls";
 
 const ProEmpty = () => {
     const dispatch = useDispatch();

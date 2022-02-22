@@ -6,7 +6,9 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
  * 初始化数据
  */
 const initialState = {
-    search: {},
+    search: {
+        price: '1'
+    },
 }
 /**
  * reducers

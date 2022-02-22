@@ -1,6 +1,6 @@
-import { hideLoading, showLoading, showNotic } from "../Toast";
+import { hideLoading, showLoading, showNotic } from "../js_utils/Toast";
 import Axios from "axios"
-import { filter } from "../format";
+import { filter } from "../js_utils/format";
 const getEthResult = async (txhash: string) => {
     const result = await Axios.get(`https://api.etherscan.io/api?module=transaction&action=gettxreceiptstatus&txhash=${txhash}&apikey=8AY47QX8ZP86AI5868EUS4MUW628ZJI6W9`)
     return filter(result)

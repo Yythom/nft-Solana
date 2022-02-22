@@ -5,10 +5,10 @@ import np, { divide } from 'number-precision';
 import Intl from 'react-intl-universal';
 import './index.scss'
 import { Input, Button, Modal, InputNumber } from "@douyinfe/semi-ui";
-import { IconSearch } from "@douyinfe/semi-icons";
+import { IconSearch, IconUndo } from "@douyinfe/semi-icons";
 import Text from "@douyinfe/semi-ui/lib/es/typography/text";
 import { getCoinList } from "../../../../services/coin";
-import { debou } from "../../../../utils/uitls";
+import { debou } from "../../../../utils/js_utils/uitls";
 import PullBox from "../../../../global-component/pullBox/pull";
 import CoinItem from "../../../../global-component/coin-item/CoinItem";
 import NftList from "./ntf_list";
@@ -36,7 +36,7 @@ declare global {
 
 
 
-const ReceiveCard = memo(({ onClick, balance }: FromCardProps) => {
+const AddNtfModal = memo(({ onClick, balance }: FromCardProps) => {
     const [modal, setModal] = useState(false);
     const [search, setsearch] = useState('');
     const [coinList, setCoinList] = useState<any>([]);
@@ -60,7 +60,7 @@ const ReceiveCard = memo(({ onClick, balance }: FromCardProps) => {
             </Button>
             {
                 onClick && <Modal
-                    title={Intl.get('select_coin')}
+                    title='You Receive'
                     visible={modal}
                     footer={null}
                     style={{
@@ -115,8 +115,7 @@ const ReceiveCard = memo(({ onClick, balance }: FromCardProps) => {
                             }
                         </div> :
                             <div style={{ paddingBottom: '20px', }}>
-                                <div onClick={() => setntfmodal(false)}>back </div>
-                                <NftList />
+                                <NftList setntfmodal={setntfmodal} />
                             </div>
                     }
                 </Modal>
@@ -126,7 +125,7 @@ const ReceiveCard = memo(({ onClick, balance }: FromCardProps) => {
     );
 })
 
-export default ReceiveCard;
+export default AddNtfModal;
 
 
 

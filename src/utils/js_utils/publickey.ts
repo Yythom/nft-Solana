@@ -1,4 +1,4 @@
-import { linkToWallet } from "./wallets/utils/linkto"
+import { linkToWallet } from "../wallets/utils/linkto"
 import {
     PublicKey,
 } from '@solana/web3.js'

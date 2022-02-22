@@ -54,15 +54,18 @@ html {
         }
     }
 }
-.semi-button:hover{
-    background:rgb(224, 224, 224) !important;
+
+.semi-button:hover {
+    background: rgb(224, 224, 224) !important;
 }
+
 .semi-button-primary {
     color: #fff;
     background: var(--bd-color);
-    background:rgb(19, 90, 255);
-    &:hover{
-        background:#eee;
+    background: rgb(19, 90, 255);
+
+    &:hover {
+        background: #eee;
     }
 }
 
@@ -77,24 +80,30 @@ html {
         color: #fff;
     }
 }
-.semi-tagInput,.semi-select{
-   
+
+.semi-tagInput,
+.semi-select {
+
     background: none;
     border: 1px #ccc solid;
     padding: 4px 2px;
     border-radius: 14px;
-    &:hover{
+
+    &:hover {
         background: none;
     }
 }
-.semi-select-option-focused{
+
+.semi-select-option-focused {
     background: #eee;
 }
-.semi-select-option{
-    &:hover{
+
+.semi-select-option {
+    &:hover {
         background: #eee;
     }
 }
+
 .semi-input-wrapper {
     color: var(--semi-color-text-0);
     background: none;
@@ -185,7 +194,7 @@ $act_bg:#657795;
 .semi-navigation-item-selected,
 .semi-navigation-item-normal:hover:not(.semi-navigation-item-selected) {
     // background: var(--bd-color);
-    background: #252A32 !important;
+    // background: #252A32 !important;
     border-radius: 0px 100px 100px 0px;
 }
 

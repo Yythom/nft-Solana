@@ -11,7 +11,7 @@ import Text from "@douyinfe/semi-ui/lib/es/typography/text";
 import CoinItem from "../coin-item/CoinItem";
 import PullBox from "../pullBox/pull";
 import { getCoinList } from "../../services/coin";
-import { debou } from "../../utils/uitls";
+import { debou } from "../../utils/js_utils/uitls";
 interface FromCardProps {
     onClick: Function,
     exchangeInfo: any,

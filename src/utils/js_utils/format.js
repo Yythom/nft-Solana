@@ -66,9 +66,11 @@ function formatUrl() {
         }
         Next(iterator);
         return { ..._obj, str: window.location.search }
-
     }
-    return 'no find search-url'
+    return {
+        msg: 'no find search-url',
+        str: window.location.search.replace('?', '')
+    }
 }
 
 // 范围随机数

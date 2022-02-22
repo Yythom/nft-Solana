@@ -1,6 +1,6 @@
 
-import { showNotic } from "../../Toast";
-import { getStorageSync } from "../../uitls";
+import { showNotic } from "../../js_utils/Toast";
+import { getStorageSync } from "../../js_utils/uitls";
 import wallets from "../phantom";
 import { connectMetaMask } from "./connect";
 import { disconnectToWallet } from "./linkto";

@@ -1,4 +1,4 @@
-import { hideLoading, showLoading, } from '../utils/Toast'
+import { hideLoading, showLoading, } from '../utils/js_utils/Toast'
 import axios from 'axios'
 import { baseURL, timeout } from './config'
 

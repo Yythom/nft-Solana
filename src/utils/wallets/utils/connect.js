@@ -1,5 +1,5 @@
-import { showNotic } from "../../Toast";
-import { setStorageSync } from "../../uitls";
+import { showNotic } from "../../js_utils/Toast";
+import { setStorageSync } from "../../js_utils/uitls";
 
 
 const connectMetaMask = async () => {

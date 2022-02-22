@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
 import { actions } from "../store/searchSlice";
-import logger from "../utils/logger";
+import logger from "../utils/js_utils/logger";
 
 function useSearch() {
     const searchSlice = useSelector((v: any) => v.searchSlice, shallowEqual);
