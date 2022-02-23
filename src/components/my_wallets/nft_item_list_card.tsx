@@ -2,24 +2,24 @@
 import { IconTick } from "@douyinfe/semi-icons";
 import { memo, useMemo, useState } from "react";
 import './index.scss'
-import { NFT_list } from "./mock";
-import useSlice from "../../../../../hooks/useStore";
-import { actions } from "../../../../../store/ntf_data_slice";
 import { IconChevronRight } from "@douyinfe/semi-icons";
 import { useHistory } from "react-router-dom";
-const NtfItemListCard = memo(() => {
+import useSlice from "../../hooks/useStore";
+import { actions } from "../../store/ntf_data_slice";
+import { NFT_list } from "../../pages/right/demo/add_nft_modal/nft_item_card/mock";
+const WalletNtfItemListCard = memo(() => {
     const { slice, dispatch } = useSlice('ntfDataSlice');
     const history = useHistory()
     return <div>
         <div className="ntf_item_wrap flex">
             {
-                NFT_list.map((e => {
+                NFT_list.map(((e: any) => {
                     const isAdd = slice?.select_nft.find((el: any) => el.bg === e.bg);
                     return <div
                         key={e.text}
                         className={`ntf_item ${!!isAdd && 'selected'}`}
                         onClick={() => {
-                            isAdd ? dispatch(actions.del(e)) : dispatch(actions.add(e));
+                            isAdd ? dispatch(actions.del_wallet_nft(e)) : dispatch(actions.add_wallet_nft(e));
                         }}>
                         {
                             isAdd && <div className="selected_icon fc">
@@ -30,20 +30,6 @@ const NtfItemListCard = memo(() => {
                         <div className="info fd">
                             <strong className="fb" style={{ cursor: 'pointer' }}
                                 onClick={(e) => {
-                                    e.stopPropagation();
-                                    const UNLISTEN = history.listen(route => {
-                                        console.log(route);
-                                        if (route.pathname === "/asset") {
-                                            document.getElementById('root')!.style.position = 'sticky'
-                                            document.getElementById('root')!.style.zIndex = '99999'
-                                        } else {
-                                            UNLISTEN()
-                                            document.getElementById('root')!.style.position = ''
-                                            document.getElementById('root')!.style.zIndex = ''
-                                        }
-                                    })
-                                    // TODO:
-                                    history.push(`/asset?addr=0xbf66f2d9630a033022602c3279b04b4a37399927&code=1414`);
                                 }}
                             >{e.text} <IconChevronRight /></strong>
                             <div>{e.price}</div>
@@ -55,4 +41,4 @@ const NtfItemListCard = memo(() => {
     </div >
 });
 
-export default NtfItemListCard;
+export default WalletNtfItemListCard;

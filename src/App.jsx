@@ -20,6 +20,7 @@ import Listings from "./pages/right/list/Listings";
 import ConnectWallets from "./utils/wallets/isConnect";
 import Asset from "./pages/right/asset/asset";
 import CacheRoute from "react-router-cache-route";
+import Swap from "./pages/right/swap";
 
 const { Header, Sider, Content } = Layout;
 const App = () => {
@@ -113,9 +114,10 @@ const App = () => {
                 <DemoComponent />
               </CacheRoute>
               {/* <Route path='/demo' exact component={DemoComponent} /> */}
+
+              <Route path='/swap' exact component={Swap} />
               <Route path='/list' exact component={Listings} />
               <Route path='/asset' exact component={Asset} />
-
             </Content>
           </Layout>
         </Layout>

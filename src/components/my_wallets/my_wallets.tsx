@@ -4,15 +4,25 @@ import { Button, Modal } from "@douyinfe/semi-ui";
 import { Input } from "@douyinfe/semi-ui/lib/es/input";
 import { memo, useState } from "react";
 import './index.scss'
-const MyWallets = memo(() => {
+import WalletNtfItemListCard from "./nft_item_list_card";
+const MyWallets = memo(({ openComponent }: {
+    openComponent?: JSX.Element
+}) => {
 
     const [showWallets, setShowWallets] = useState(false);
     const [search, setSearch] = useState('');
 
     return <div className="my-wallets">
-        <Button onClick={() => setShowWallets(true)}>my wattle</Button>
+        <div onClick={() => setShowWallets(true)}>
+            {
+                openComponent ?? <Button >open wattle</Button>
+            }
+        </div>
         <Modal
             title='My Wallet'
+            style={{
+                width: '80vw'
+            }}
             visible={showWallets}
             onCancel={() => setShowWallets(false)}
             onOk={() => setShowWallets(false)}
@@ -27,6 +37,12 @@ const MyWallets = memo(() => {
                         }} suffix={<IconSearch />} showClear
                     />
                 </div>
+                {
+
+                    <div style={{ paddingBottom: '20px', }}>
+                        <WalletNtfItemListCard />
+                    </div>
+                }
             </div>
         </Modal>
     </div>

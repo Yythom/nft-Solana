@@ -8,7 +8,7 @@ import useSelectCoin from "../../../hooks/useSelectCoin";
 import ConnectWallets from "./connec_wallets/connec_wallets";
 import ImagesComponent from "./img_show/img_show";
 import './index.scss'
-import MyWallets from "./my_wallets/my_wallets";
+import MyWallets from "../../../components/my_wallets/my_wallets";
 import AddNtfModal from "./add_nft_modal/modal";
 const DemoComponent = memo(() => {
     // const {

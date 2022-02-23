@@ -34,6 +34,13 @@ const Menu = () => {
         if (!user?.mode) return
         return [
             {
+                itemKey: 'Swap', //地址本
+                url: 'swap',
+                // icon: <div className='menu-icon'>
+                //     {menu?.itemKey === 'Save' ? <img src={icon[user?.mode]?.act_save} /> : <img src={icon[user?.mode]?.save} />}
+                // </div>,
+            },
+            {
                 itemKey: 'Demo', //地址本
                 url: 'demo',
                 // icon: <div className='menu-icon'>

@@ -9,6 +9,7 @@ import { actions } from "../../../store/ntf_data_slice";
 import { formatUrl } from "../../../utils/js_utils/format";
 import './index.scss'
 import { getAssetData } from "./tmp/req";
+
 const Asset = memo(() => {
     const query: any = formatUrl();
     const { slice, dispatch } = useSlice('ntfDataSlice');
@@ -25,6 +26,7 @@ const Asset = memo(() => {
             usd: '88',
             bg: result.asset.smallImageUrl
         }))
+        history.goBack()
     }
 
     console.log(result);
@@ -32,7 +34,7 @@ const Asset = memo(() => {
     return <div className="asset" >
         <div className="flex" style={{ flexWrap: 'wrap', alignItems: 'flex-start', position: 'relative' }}>
             <div className="btn" style={{ position: 'absolute', right: '26px', top: '0' }}
-                onClick={() => {
+                onClick={(e) => {
                     history.goBack();
                 }}
             ><IconReply /></div>
@@ -87,7 +89,9 @@ const Asset = memo(() => {
                 <div style={{ marginTop: '20px' }}>
                     <Tabs type="button">
                         <TabPane tab='Info' itemKey="1" >
-
+                            <div>
+                                {result?.asset.description}
+                            </div>
                         </TabPane>
                         <TabPane tab='History' itemKey="2" >
 

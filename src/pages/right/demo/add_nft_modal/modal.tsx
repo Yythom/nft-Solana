@@ -15,28 +15,10 @@ import NftList from "./ntf_list";
 interface FromCardProps {
     onClick: Function,
     balance?: number,
-}
-interface Coin {
-    coin: {
-        address: string,
-        chainId?: number,
-        decimals?: number,
-        logoURI?: string,
-        name?: string,
-        symbol?: string,
-    },
-    num: string
+    openComponent?: JSX.Element,
 }
 
-declare global {
-    interface Window {
-        base58: any;
-    }
-}
-
-
-
-const AddNtfModal = memo(({ onClick, balance }: FromCardProps) => {
+const AddNtfModal = memo(({ onClick, balance, openComponent }: FromCardProps) => {
     const [modal, setModal] = useState(false);
     const [search, setsearch] = useState('');
     const [coinList, setCoinList] = useState<any>([]);
@@ -55,9 +37,12 @@ const AddNtfModal = memo(({ onClick, balance }: FromCardProps) => {
 
     return (
         <div className="receive_card">
-            <Button onClick={() => setModal(true)}>
-                Add NFTs
-            </Button>
+            <div onClick={() => setModal(true)}>
+                {openComponent ?? <Button >
+                    Add NFTs
+                </Button>}
+            </div>
+
             {
                 onClick && <Modal
                     title='You Receive'
