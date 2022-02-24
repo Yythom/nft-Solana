@@ -7,7 +7,7 @@ import { actions } from "../../../store/ntf_data_slice";
 import logger from "../../../utils/js_utils/logger";
 import './index.scss'
 const Listings = memo(() => {
-    const { slice, dispatch } = useSlice('ntfDataSlice');
+    const { slice, dispatch } = useSlice('ntf_data_slice');
 
     return <div>
 

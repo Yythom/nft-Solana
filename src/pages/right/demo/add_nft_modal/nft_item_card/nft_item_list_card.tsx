@@ -8,7 +8,7 @@ import { actions } from "../../../../../store/ntf_data_slice";
 import { IconChevronRight } from "@douyinfe/semi-icons";
 import { useHistory } from "react-router-dom";
 const NtfItemListCard = memo(() => {
-    const { slice, dispatch } = useSlice('ntfDataSlice');
+    const { slice, dispatch } = useSlice('ntf_data_slice');
     const history = useHistory()
     return <div>
         <div className="ntf_item_wrap flex">
@@ -43,7 +43,7 @@ const NtfItemListCard = memo(() => {
                                         }
                                     })
                                     // TODO:
-                                    history.push(`/asset?addr=0xbf66f2d9630a033022602c3279b04b4a37399927&code=1414`);
+                                    history.push(`/asset?addr=0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb&code=8470`);
                                 }}
                             >{e.text} <IconChevronRight /></strong>
                             <div>{e.price}</div>

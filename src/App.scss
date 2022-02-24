@@ -179,8 +179,12 @@
   }
 }
 
+img {
+  border-radius: 8px;
+}
+
 .card {
-  border: 1px solid var(--semi-color-primary-light-default);
+  border: 1px solid #eee;
   padding: 17px;
   // padding-top: 0;
   border-radius: 20px;
@@ -202,6 +206,7 @@ body[theme-mode="dark"] {
   .card {
     border: none;
     background: #21252E;
+    color: #fff;
   }
 
   thead {

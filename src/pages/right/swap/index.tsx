@@ -9,6 +9,7 @@ import './index.scss'
 
 const Swap = memo(() => {
     const { slice: userStore, dispatch }: any = useSlice('user');
+    const { slice, }: any = useSlice('ntf_data_slice');
 
     return <div className="swap">
         <div className="fdc">
@@ -36,7 +37,7 @@ const Swap = memo(() => {
                     <div>You Receive</div>
                     {/* <div className="btn" >Add NFTs</div> */}
                 </div>
-                <div>Total: {userStore?.balance}</div>
+                <div>Total: {slice.info?.select_nft_price}</div>
                 <div style={{ cursor: 'pointer' }}>
                     <AddNtfModal
                         openComponent={

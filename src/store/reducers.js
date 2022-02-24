@@ -13,7 +13,7 @@ const reducers = {
     demo: demo,
     user,
     searchSlice: searchSlice,
-    ntfDataSlice: ntf_data_slice
+    ntf_data_slice
 }
 
 const reducer = combineReducers(reducers)

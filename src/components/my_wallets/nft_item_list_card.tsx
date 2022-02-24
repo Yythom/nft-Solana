@@ -8,7 +8,7 @@ import useSlice from "../../hooks/useStore";
 import { actions } from "../../store/ntf_data_slice";
 import { NFT_list } from "../../pages/right/demo/add_nft_modal/nft_item_card/mock";
 const WalletNtfItemListCard = memo(() => {
-    const { slice, dispatch } = useSlice('ntfDataSlice');
+    const { slice, dispatch } = useSlice('ntf_data_slice');
     const history = useHistory()
     return <div>
         <div className="ntf_item_wrap flex">

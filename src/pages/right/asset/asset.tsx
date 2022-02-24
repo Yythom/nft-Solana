@@ -12,7 +12,7 @@ import { getAssetData } from "./tmp/req";
 
 const Asset = memo(() => {
     const query: any = formatUrl();
-    const { slice, dispatch } = useSlice('ntfDataSlice');
+    const { slice, dispatch } = useSlice('ntf_data_slice');
     const history = useHistory();
     const [result]: any = usePaging({
         addr: query.addr,
@@ -89,8 +89,15 @@ const Asset = memo(() => {
                 <div style={{ marginTop: '20px' }}>
                     <Tabs type="button">
                         <TabPane tab='Info' itemKey="1" >
-                            <div>
-                                {result?.asset.description}
+                            <div className="card">
+                                <div className="flex" style={{ marginBottom: '20px' }}>
+                                    <img src={result?.collection.imageUrl} alt="" style={{ width: '32px', height: '32px', marginRight: '12px' }} />
+                                    <div className="fd">
+                                        <span style={{ margin: '0 0 4px 0 ', color: '#bbb' }}>Collection</span>
+                                        <span className="bold" style={{ fontSize: '14px' }}> {result?.collection.name}</span>
+                                    </div>
+                                </div>
+                                {result?.collection.description}
                             </div>
                         </TabPane>
                         <TabPane tab='History' itemKey="2" >

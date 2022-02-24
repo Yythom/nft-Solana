@@ -10,7 +10,7 @@ import { Input } from "@douyinfe/semi-ui/lib/es/input";
 const NftList = memo(({ setntfmodal }: any) => {
     const { search, setSearch } = useSearch();
     const [visible, setVisible] = useState(false);
-    const { slice, dispatch } = useSlice('ntfDataSlice');
+    const { slice, dispatch } = useSlice('ntf_data_slice');
     const { slice: searchSlice, } = useSlice('searchSlice');
     const change = () => {
         setVisible(!visible);
