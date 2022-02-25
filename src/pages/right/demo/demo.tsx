@@ -2,24 +2,14 @@
 import { IconSearch } from "@douyinfe/semi-icons";
 import { Button, Input, Modal, Select, TagInput } from "@douyinfe/semi-ui";
 import { memo, useMemo, useState } from "react";
-import FromCard from "../../../global-component/form_card/from_card";
 import PopContent from "../../../global-component/pop_content";
-import useSelectCoin from "../../../hooks/useSelectCoin";
 import ConnectWallets from "./connec_wallets/connec_wallets";
 import ImagesComponent from "./img_show/img_show";
 import './index.scss'
 import MyWallets from "../../../components/my_wallets/my_wallets";
-import AddNtfModal from "./add_nft_modal/modal";
+import AddNtfModal from "../../../components/add_nft_modal/modal";
+import { transactions } from '@metaplex/js'
 const DemoComponent = memo(() => {
-    // const {
-    //     fromCoin,
-    //     toCoin,
-    //     isNotBalance,
-    //     balance,
-    //     setFromCoinHandle,
-    //     setToCoinHandle,
-    // } = useSelectCoin(false);
-
     return <div>
         {/* <FromCard
             exchangeInfo={{
@@ -42,6 +32,14 @@ const DemoComponent = memo(() => {
             console.log(coin, 'rec');
 
         }} />
+
+        <button onClick={() => {
+            console.log(transactions);
+
+        }}>
+            test
+        </button>
+
         <div style={{ width: '200px' }}>
             <ImagesComponent imgList={Array.from(Array(4))} />
         </div>

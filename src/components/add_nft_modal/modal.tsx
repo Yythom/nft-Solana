@@ -7,10 +7,10 @@ import './index.scss'
 import { Input, Button, Modal, InputNumber } from "@douyinfe/semi-ui";
 import { IconSearch, IconUndo } from "@douyinfe/semi-icons";
 import Text from "@douyinfe/semi-ui/lib/es/typography/text";
-import { getCoinList } from "../../../../services/coin";
-import { debou } from "../../../../utils/js_utils/uitls";
-import PullBox from "../../../../global-component/pullBox/pull";
-import CoinItem from "../../../../global-component/coin-item/CoinItem";
+import { getCoinList } from "../../services/coin";
+import { debou } from "../../utils/js_utils/uitls";
+import PullBox from "../../global-component/pullBox/pull";
+import CoinItem from "../coin-item/CoinItem";
 import NftList from "./ntf_list";
 interface FromCardProps {
     onClick: Function,

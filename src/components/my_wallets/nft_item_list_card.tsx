@@ -6,7 +6,7 @@ import { IconChevronRight } from "@douyinfe/semi-icons";
 import { useHistory } from "react-router-dom";
 import useSlice from "../../hooks/useStore";
 import { actions } from "../../store/ntf_data_slice";
-import { NFT_list } from "../../pages/right/demo/add_nft_modal/nft_item_card/mock";
+import { NFT_list } from "../add_nft_modal/nft_item_card/mock";
 const WalletNtfItemListCard = memo(() => {
     const { slice, dispatch } = useSlice('ntf_data_slice');
     const history = useHistory()

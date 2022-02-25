@@ -1,10 +1,10 @@
 import { Button, Card, Select, SideSheet } from "@douyinfe/semi-ui";
 import { memo, useState } from "react";
 import NtfItemListCard from "./nft_item_card/nft_item_list_card";
-import SelectTag from "../../../../global-component/selectTag/select_tag";
-import useSearch from "../../../../hooks/useSearch";
-import useSlice from "../../../../hooks/useStore";
-import ImagesComponent from "../img_show/img_show";
+import SelectTag from "../../global-component/selectTag/select_tag";
+import useSearch from "../../hooks/useSearch";
+import useSlice from "../../hooks/useStore";
+import ImagesComponent from "../../pages/right/demo/img_show/img_show";
 import { IconReply, IconFilter } from "@douyinfe/semi-icons";
 import { Input } from "@douyinfe/semi-ui/lib/es/input";
 const NftList = memo(({ setntfmodal }: any) => {

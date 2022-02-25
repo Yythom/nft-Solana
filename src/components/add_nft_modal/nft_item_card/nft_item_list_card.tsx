@@ -3,8 +3,8 @@ import { IconTick } from "@douyinfe/semi-icons";
 import { memo, useMemo, useState } from "react";
 import './index.scss'
 import { NFT_list } from "./mock";
-import useSlice from "../../../../../hooks/useStore";
-import { actions } from "../../../../../store/ntf_data_slice";
+import useSlice from "../../../hooks/useStore";
+import { actions } from "../../../store/ntf_data_slice";
 import { IconChevronRight } from "@douyinfe/semi-icons";
 import { useHistory } from "react-router-dom";
 const NtfItemListCard = memo(() => {

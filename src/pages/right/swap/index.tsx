@@ -4,7 +4,7 @@ import { Card, Select } from "@douyinfe/semi-ui";
 import { memo, } from "react";
 import MyWallets from "../../../components/my_wallets/my_wallets";
 import useSlice from "../../../hooks/useStore";
-import AddNtfModal from "../demo/add_nft_modal/modal";
+import AddNtfModal from "../../../components/add_nft_modal/modal";
 import './index.scss'
 
 const Swap = memo(() => {

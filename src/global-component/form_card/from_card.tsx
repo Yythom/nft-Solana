@@ -8,7 +8,7 @@ import { Input, Button, Modal, InputNumber } from "@douyinfe/semi-ui";
 import { IconSearch } from "@douyinfe/semi-icons";
 
 import Text from "@douyinfe/semi-ui/lib/es/typography/text";
-import CoinItem from "../coin-item/CoinItem";
+import CoinItem from "../../components/coin-item/CoinItem";
 import PullBox from "../pullBox/pull";
 import { getCoinList } from "../../services/coin";
 import { debou } from "../../utils/js_utils/uitls";
