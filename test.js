@@ -1,4 +1,3 @@
-function a(type) {
-    console.log(Buffer.from(type, 'base64').toString());
-}
-
+const a = require('@metaplex/js')
+const b = require('@metaplex-foundation/mpl-auction-house')
+console.log(b.AuctionHouseProgram);

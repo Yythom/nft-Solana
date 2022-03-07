@@ -2130,6 +2130,33 @@
     "@types/yargs" "^16.0.0"
     "chalk" "^4.0.0"
 
+"@metaplex-foundation/beet-solana@0.0.6":
+  "integrity" "sha512-MMwqCd51q+dZFtpjuUkGN/jX/gO5fiRuf+uyZ2fVAUcnZCmVWwSEeeSISffvR0mmhc/JSWkJ7Pi0s+FkYVB7dA=="
+  "resolved" "https://registry.npmjs.org/@metaplex-foundation/beet-solana/-/beet-solana-0.0.6.tgz"
+  "version" "0.0.6"
+  dependencies:
+    "@metaplex-foundation/beet" ">0.0.5"
+    "@solana/web3.js" "^1.31.0"
+
+"@metaplex-foundation/beet@>0.0.5", "@metaplex-foundation/beet@0.0.8":
+  "integrity" "sha512-OI4V/ASqqR802GivPLBLrihDj99xX2yceTvZt20gn2A3tlPg0ygV8brTHE5LZey/ud3Guh8t54GRwD6XcqStZg=="
+  "resolved" "https://registry.npmjs.org/@metaplex-foundation/beet/-/beet-0.0.8.tgz"
+  "version" "0.0.8"
+  dependencies:
+    "ansicolors" "^0.3.2"
+    "bn.js" "^5.2.0"
+    "debug" "^4.3.3"
+
+"@metaplex-foundation/mpl-auction-house@^1.0.2":
+  "integrity" "sha512-m/VZ0+ypjDSXz5IqYnqA4uO9gF7A2fcgq/h2Rx2uP21Uvd7xuKwpt8qweyitorY8UFyTMsnZjtZws81IAovXOQ=="
+  "resolved" "https://registry.npmjs.org/@metaplex-foundation/mpl-auction-house/-/mpl-auction-house-1.0.2.tgz"
+  "version" "1.0.2"
+  dependencies:
+    "@metaplex-foundation/beet" "0.0.8"
+    "@metaplex-foundation/beet-solana" "0.0.6"
+    "@metaplex-foundation/mpl-core" "0.0.4"
+    "@solana/web3.js" "^1.33.0"
+
 "@metaplex-foundation/mpl-auction@^0.0.2":
   "integrity" "sha512-4UDDi8OiQr+D6KrCNTRrqf/iDD6vi5kzRtMRtuNpywTyhX9hnbr1Zkc6Ncncbh9GZhbhcn+/h5wHgzh+xA6TnQ=="
   "resolved" "https://registry.npmjs.org/@metaplex-foundation/mpl-auction/-/mpl-auction-0.0.2.tgz"
@@ -2145,6 +2172,14 @@
   "version" "0.0.2"
   dependencies:
     "@solana/web3.js" "^1.31.0"
+    "bs58" "^4.0.1"
+
+"@metaplex-foundation/mpl-core@0.0.4":
+  "integrity" "sha512-lrWdbufDgPw+GmSJpd6PP4QaThoHTkWKD9309vQ9Wkq2cABzv1g6VA83zIIkn/kwDRLcDaEjiiAKIfIck/09GQ=="
+  "resolved" "https://registry.npmjs.org/@metaplex-foundation/mpl-core/-/mpl-core-0.0.4.tgz"
+  "version" "0.0.4"
+  dependencies:
+    "@solana/web3.js" "^1.33.0"
     "bs58" "^4.0.1"
 
 "@metaplex-foundation/mpl-metaplex@^0.0.5":
@@ -2543,10 +2578,10 @@
     "tweetnacl" "^1.0.0"
     "ws" "^7.0.0"
 
-"@solana/web3.js@^1.15.0", "@solana/web3.js@^1.17.0", "@solana/web3.js@^1.2.0", "@solana/web3.js@^1.20.0", "@solana/web3.js@^1.21.0", "@solana/web3.js@^1.24.0", "@solana/web3.js@^1.30.2", "@solana/web3.js@^1.31.0":
-  "integrity" "sha512-7nHHx1JNFnrt15e9y8m38I/EJCbaB+bFC3KZVM1+QhybCikFxGMtGA5r7PDC3GEL1R2RZA8yKoLkDKo3vzzqnw=="
-  "resolved" "https://registry.npmjs.org/@solana/web3.js/-/web3.js-1.31.0.tgz"
-  "version" "1.31.0"
+"@solana/web3.js@^1.15.0", "@solana/web3.js@^1.17.0", "@solana/web3.js@^1.2.0", "@solana/web3.js@^1.20.0", "@solana/web3.js@^1.21.0", "@solana/web3.js@^1.24.0", "@solana/web3.js@^1.30.2", "@solana/web3.js@^1.31.0", "@solana/web3.js@^1.33.0":
+  "integrity" "sha512-3bDawFFI0KcvgI8Ae4N4hdQ8+Bg9gu6q+IkhPrYxOF6RYnB3U+9A4u+DhHZWLvTvgoTyesi/m5HzlleKtFEqRQ=="
+  "resolved" "https://registry.npmjs.org/@solana/web3.js/-/web3.js-1.35.1.tgz"
+  "version" "1.35.1"
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@ethersproject/sha2" "^5.5.0"
@@ -3868,6 +3903,11 @@
   "integrity" "sha512-Cxwpt2SfTzTtXcfOlzGEee8O+c+MmUgGrNiBcXnuWxuFJHe6a5Hz7qwhwe5OgaSYI0IJvkLqWX1ASG+cJOkEiA=="
   "resolved" "https://registry.npmjs.org/ansi-styles/-/ansi-styles-5.2.0.tgz"
   "version" "5.2.0"
+
+"ansicolors@^0.3.2":
+  "integrity" "sha1-ZlWX3oap/+Oqm/vmyuXG6kJrSXk="
+  "resolved" "https://registry.npmjs.org/ansicolors/-/ansicolors-0.3.2.tgz"
+  "version" "0.3.2"
 
 "any-promise@^1.0.0":
   "integrity" "sha1-q8av7tzqUugJzcA3au0845Y10X8="
@@ -6111,10 +6151,10 @@
   dependencies:
     "ms" "^2.1.1"
 
-"debug@^4.0.1", "debug@^4.1.0", "debug@^4.1.1", "debug@^4.3.1", "debug@4":
-  "integrity" "sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw=="
-  "resolved" "https://registry.npmjs.org/debug/-/debug-4.3.2.tgz"
-  "version" "4.3.2"
+"debug@^4.0.1", "debug@^4.1.0", "debug@^4.1.1", "debug@^4.3.1", "debug@^4.3.3", "debug@4":
+  "integrity" "sha512-/zxw5+vh1Tfv+4Qn7a5nsbcJKPaSvCDhojn6FEl9vupwK2VCSDtEiEtqr8DFtzYFOdz63LBkxec7DYuc2jon6Q=="
+  "resolved" "https://registry.npmjs.org/debug/-/debug-4.3.3.tgz"
+  "version" "4.3.3"
   dependencies:
     "ms" "2.1.2"
 
